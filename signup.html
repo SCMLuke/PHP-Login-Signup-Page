@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>signup</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+</head>
+<body>
+    <h1>Signup</h1>
+    <form name="myForm" action="process-signup.php" method ="post"> <!--Call the process-signup.php file to validate the inputs-->
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+        </div>
+
+        <div>
+            <label for="password_confirmation">Confirm Password</label>
+            <input type="password" id="password_confirmation" name="password_confirmation">
+        </div>
+
+        <button onclick="validateForm()">Sign Up</button>   <!--Call the Javascript validation.-->
+    </form>
+<script src="validation.js"></script>   <!--Reference the validation js file, so you can cal the function.-->
+</body>
+</html>
